@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+/* Exercice 1: Utilisation des Media Queries */
+.media-query-example {
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 600px) {
+    .media-query-example {
+        background-color: lightcoral;
+    }
+}
+
+/* Exercice 2: Rendre les Images et Vidéos Responsives */
+.responsive-media img,
+.responsive-media video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Exercice 3: Ajuster la Taille du Texte */
+.text-size-example {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+    .text-size-example {
+        font-size: 22px;
+        font-family:  Courier, monospace;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .text-size-example {
+        font-size: 28px;
+        font-family: Times;
+    }
+}
+
+
+
+
+/* Exercice 5: Formulaires Adaptatifs */
+
+
+.form-container {
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e44d26;
+}
+
+/* Media Query pour rendre le formulaire plus adaptatif */
+@media screen and (max-width: 600px) {
+    .form-container {
+        max-width: 100%;
+    }
+}
